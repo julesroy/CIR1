@@ -1,0 +1,329 @@
+<!Doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title> TP1 </title>
+		
+		 <!-- Ceci est un style CSS afin de tracer les bordures du tableau de l'exercice 8. Ignorer ce style, on le verra dans les prochains TP -->
+		<style>
+			table { border-collapse: collapse;}
+			td,th { border-style: solid;}
+		</style>
+	</head>
+	
+	
+	<body>
+		<h1 id="Montitre"> TP 1 : HTML5 </h1>
+		<p id="sommaire"><strong>Sommaire:</strong></p>
+		<ul><!-- liste sommaire page TP1 -->
+			<li><a href="#exercice1">Exercice 1</a></li>
+			<li><a href="#exercice2">Exercice 2</a></li>
+			<li><a href="#exercice3">Exercice 3</a></li>
+			<li><a href="#exercice4">Exercice 4</a></li>
+			<li><a href="#exercice5">Exercice 5</a></li>
+			<li><a href="#exercice6">Exercice 6</a></li>
+			<li><a href="#exercice7">Exercice 7</a></li>
+			<li><a href="#exercice8">Exercice 8</a></li>
+			<li><a href="#exercice9">Exercice 9</a></li>
+		</ul>
+		
+		<h2 id="exercice1">Exercice 1: Les titres, sous-titres et les paragraphes</h2>
+
+		<p>Les balises titre h1, h2, ..., h6 indiquent le niveau du titre : h2 suit h1, h3 suit h2 etc. 
+		Une grosse erreur consisterait à croire que vous allez utiliser h1, h2 ou h6 en fonction de la taille du texte que vous voulez obtenir. 
+		L'habillage ( c'est-à-dire la mise en forme) de vos balises pourra dans un second temps être réglé par l'utilisation d’une feuille de style CSS (bientôt dans les TP prochains).</p>
+		
+		<p>Question: Ajoutez des balises titre de niveau 2 aux titres des exercices 1, 2 et 3, et les balises de paragraphe p à tous les paragraphes de ces exercices.</p>
+	
+		<hr> <!-- La balise hr permet de dessiner une ligne de séparation horizontale -->
+		<h2 id="exercice2">Exercice 2: L'importance d'un texte</h2>
+		
+		<p>
+			Voici un paragraphe contenant un <strong>texte important</strong> , un <em> texte mis en emphase </em> , <sup>un texte en hauteur (exposant)</sup> , un <sub> texte en bas (en indice) </sub>.
+		</p>
+		
+		<p>Question: Complétez le paragraphe ci-dessus avec les balises de formatage.</p>
+		
+		<p>Documentation W3school <a href="https://www.w3schools.com/html/html_formatting.asp"> ICI </a></p>
+
+		<hr>
+		<h2 id="exercice3">Exercice 3: Saut de ligne et texte preformaté</h2>
+		
+		<p>
+			Vous avez peut être remarqué que les sauts de ligne et même les espaces en HTML ne sont pas considéré pas vos navigateurs,
+			pour ajouter en saut de ligne il faut utiliser la balise &lt; br&gt; <br> et pour ajouter des espaces on peut utiliser le code du symbole 
+			d'un espace &nbsp; &nbsp; et voilà.
+		</p>
+
+		<pre>
+		Voici aussi un paragraphe avec plusieurs espaces      et des
+				sauts de ligne qui sont      bien
+							  conservés
+			par votre navigateur. Ceci est grâce à la balise &lt;pre&gt; (au lieu de la balise &lt;p&gt;)
+		</pre>
+		
+		<hr>
+		<h2 id="exercice4">Exercice 4: Un peu de CSS, de caractères spéciaux et leurs références HTML</h2>
+		
+		<p>Vous pouvez d'ores et déjà utiliser un style CSS en ligne, en mettant le texte à mettre en forme dans une balise &lt;span&gt; et 
+		en ajoutant l'attribut "style", par exemple pour souligner un texte :
+		<span style=" text-decoration : underline ; ">un mot souligné</span>.</p>
+		
+		<p>La balise &lt; span&gt; est dite générique , elle ne fait rien, elle sert de support pour mettre des propriétés CSS en ligne . La balise
+		générique des éléments de type bloc est la balise &lt;div&gt;</p>
+		
+		<p>En HTML, on peut aussi ajouter des symboles &copy; ou des émojis &#128125; </p>
+		
+		<p>Documentation W3school sur : 
+		<a href="https://www.w3schools.com/html/html_entities.asp"> les entités HTML </a>, 
+		<a href="https://www.w3schools.com/html/html_symbols.asp"> les symboles </a> 
+		et <a href="https://www.w3schools.com/html/html_emojis.asp" >les émojis</a>
+		</p>
+		
+		<hr>
+		<h2 id="exercice5">Exercice 5: Les médias en HTML</h2>
+		
+		<h3>5.1. Images</h3> <!-- C'est un titre de niveau 3. Ajoutez la balise h3 -->
+		
+		<p>On peut ajouter les images avec la balise de type en-ligne &lt; img&gt; qui permet de mettre une image dans un texte, 
+		<img src="images/logo.png" alt ="Logo JUNIA" width="100" height="50"/> c'est-à-dire qu'elle s'affiche au fil du texte.</p>
+		<p>L'attribut src prend le chemin de l'image et l'attribut « alt » prend un descriptif de l'image qui s'affiche au cas où l'image n'est pas disponible.</p>
+	
+		<strong>Remarque: Les balises HTML5 peuvent être de type en ligne ou de type bloc: 
+		les balise de type en ligne s'affichent les unes à la suite des autres sur la même ligne, tandis que  
+		les balises de type bloc s'affiche les unes sous les autres.
+		La majorité des balises sont de type bloc; les balises de type en ligne les plus utilisées sont: a, img, span, les balises de formatage de texte strong, em ...</strong>
+		
+
+		<p>On peut aussi ajouter les images avec la balise de type bloc &lt; figure&gt;  où on peut aussi mettre un titre de l'image</p>
+		
+		<figure>
+			<img src="images/logo.png" alt ="Logo JUNIA"/>
+			<figcaption >Le logo de JUNIA. </figcaption >
+		</figure>
+		
+		<p>Remarque : Pour acceder à l'image, on a utilisé <strong>un chemin relatif</strong>.</p>
+		
+		<p>Les formats d'images supportés par tous les navigateurs sont: APNG, GIF, ICO, JPEG, PNG, SVG</p>
+		
+		<h3>5.2. Vidéos</h3> <!-- C'est un titre de niveau 3. Ajoutez la balise h3 -->
+		
+		<p>Pour ajouter les vidéos, on utilise la balise &lt; video&gt; . Seul les formats MP4, WebM et Ogg sont supportés en HTML5.</p>
+		
+		<p>Documentation W3school : <a href="https://www.w3schools.com/html/html5_video.asp"> HTML vidéos </a> </p>
+		
+		<video width="420" height="320" controls autoplay muted> <!-- On ajoute ici autoplay et muted -->
+			<source src="images/juniaTV.mp4" type="video/mp4"/>
+			Votre navigateur ne supporte pas ce format de vidéo. <!-- Ce message sera affiché si la vidéo n'est pas suporté par le navigateur -->
+		</video>
+
+		<br>
+
+		<h3>5.3. Audios</h3> <!-- C'est un titre de niveau 3. Ajoutez la balise h3 -->
+		
+		<p>Pour ajouter les audios, on utilise la balise &lt; audio&gt;. Seul les formats MP3, WAV et OGG sont supportés en HTML5.</p>
+		
+		<p>Documentation W3school : <a href="https://www.w3schools.com/html/html5_audio.asp"> HTML Audios </a> </p> 
+		
+		<audio controls>
+			<source src="images/voeux.mp3" type="audio/mp3">
+			Votre navigateur ne supporte pas ce format d'audio.
+		</audio>
+		
+		<p>Question : Consultez la documentation sur les vidéos et audios, et testez les autres attributs des balise video et audio (autre qu l’attribut « controls »)</p>
+		
+
+		<hr>
+		
+		<h2 id="exercice6">Exercice 6: Les listes </h2>
+		<p>Il existe 3 types de liste en HTML5 : les listes numérotées/ordonnées (Ordered List) "ol", les listes non ordonnées (Unordered List) "ul" 
+		et les listes de description (Description List)"dl".</p>
+		
+		<h3>Exemple de liste ordonée</h3>
+		<ol>
+			<li>Element 1</li> 
+			<li>Element 2</li>
+		</ol>
+		<!--
+			* ol : Ordered list
+			* li : List Item (élément de la liste)
+		-->
+		
+		<h3>Exemple de liste non ordonnée</h3>
+		<ul>
+			<li>Element 1</li> 
+			<li>Element 2</li>
+		</ul>
+		<!--
+			* ul : Unordered list
+			* li : List Item (élément de la liste)
+		-->
+		
+		<h3>Exemple de liste de description</h3>
+		<dl>
+			<dt>Terme 1</dt> 
+				<dd>Description du Terme 1</dd>
+			<dt>Terme 2</dt>
+				<dd>Description du Terme 2</dd>
+		</dl>
+		<!--
+			* dl : Description list
+			* dt : Terme à définir
+			* dd : Définition du terme
+		-->
+		
+		
+		<hr>
+		<h2 id="exercice7">Exercice 7: Les liens hypertextes</h2>
+		<p>Pour ajouter un lien hypertexte, on utilise la balise &lt; a&gt; et l'attribut « href » qui prend la valeur du lien hypertexte,
+		et entre la balise ouvrante et la balise fermante, on met l'objet cliquable (texte, image).</p>
+
+		<p>Documentation W3school : <a href="https://www.w3schools.com/html/html_links.asp" target="_blank"> les liens hypertextes </a></p> <!-- Ajoutez l'attribut "tarjet" -->
+		<p>Question: Ajoutez l'attribut "target" au lien hypertexte (balises a) ci-dessus, comme ceci: 
+		&lt;a href=" .... " target="_blank"&gt; .... &lt;/a&gt;</p> 
+		
+		<p>Testez votre page avec le navigateur choisi et cliquez sur le lien. L'attribut target permet de définir le mode d'ouverture du lien: 
+		Dans la fenêtre courante, dans une nouvelle fenêtre, ...etc.</p>
+		
+		<p>On peut aussi ajouter des liens vers des emplacements précis et interne d'une page, comme par exemple: 
+		<a href="#Montitre"> Haut de la page (titre h1)</a>. Ce lien nous déplace à l'emplacement du titre h1 où nous avons ajouté un attribut id prenant la valeur Montitre.</p>
+		
+		<p>Question: Créez un sommaire sous forme d'une liste non ordonnée au-dessous du titre h1 (en haut de la page), et ajoutez des liens hypertextes 
+		à ce sommaire vers l'emplacement de chaque exercice (Les liens Hypertextes sont à mettre dans les balise li) </p>
+		
+		<p style="color: red;"><strong>Voir sommaire en haut de la page <a href="#sommaire">ici</a></strong></p>
+
+		<hr>
+		<h2 id="exercice8">Exercice 8: Les tableaux</h2>
+		<p>Voici les balises à retenir pour créer un tableau en HTML:</p>
+		<ul>
+			<li>Balises élémentaires (obligatoires)
+				<ul>
+					<li>table : crée un tableau</li>
+					<li>tr : ligne du tableau (tr signifie "table row", soit en français une ligne de tableau)</li>
+					<li>td : cellules du tableau (td signifie "table data", soit en français une donnée du tableau) </li>
+					<li>th : cellules d’en-tête du tableau (th signifie "table header", soit en français un en-tête de tableau)</li>
+				</ul>
+			</li>
+			<li>Balises complémentaires (optionnelles)
+				<ul>
+					<li>caption : légende du tableau</li>
+					<li>thead : groupe de cellules d'en-tête</li>
+					<li>tbody : groupe de cellules de corps de tableau</li>
+					<li>tfoot : groupe de cellules de pied de tableau</li>
+				</ul>
+			</li>
+			<li>Propriétés permettant de coller (fusionner) des cellules
+				<ul>
+					<li>colspan : groupe des colonnes, par exemple : &lt; td colspan="2"&gt; (cette cellule et celle située juste à côté à droite sur la même ligne sont regroupées en une cellule)</li>
+					<li>rowspan : groupe des lignes, par exemple : &lt; td rowspan="2"&gt; (cette cellule et celle située juste en dessous sont regroupées en une cellule)</li>
+				</ul>
+			</li>
+		</ul>
+		
+		<strong>Remarque: Examinez bien comment on a créé des listes embarquées pour cet exercice</strong>
+		
+		<p>Documentation W3school :  <a href="https://www.w3schools.com/html/html_tables.asp"> Les tableaux </a> 
+		(Ignorez les paragraphes sur l'habillage du tableau, on les verra dans les prochains TP)</p> 
+		
+		<p>Question: Complétez le code HTML ci-dessous permettant d’obtenir le tableau suivant</p>
+		<figure>
+			<img src="images/tableau.jpg" alt ="Exemple d'un tableau en HTML"/>
+		</figure >
+		<p>Ce tableau comporte 6 lignes et 4 colonnes.</p>
+
+		<table><!-- création du tableau -->
+			<caption> Présentation de quelques cours</caption>
+			<thead> <!-- optionnel -->
+				<tr> <!-- ligne 1 -->
+					<th></th>
+					<th>Niveau 1</th>
+					<th>Niveau 2</th>
+					<th>Niveau 3</th>
+
+				</tr>
+			</thead>
+			
+			<tbody> <!-- optionnel -->
+				<tr> <!-- ligne 2 -->
+					<th rowspan="2">Daniel Martin</th><!-- extension de la colonne sur 2 lignes -->
+					<th colspan="2">Un cours X1 pour etudiants de niveau 1 et 2</th><!-- extension de la ligne sur 2 colonnes -->
+					<th></th>
+				</tr>
+				
+				<tr> <!-- ligne 3 -->
+					<th colspan="3">Un cours X2 pour etudiants de tout niveaux</th><!-- extension de la ligne sur 3 colonnes -->
+				</tr>
+				
+				<tr> <!-- ligne 4 -->
+					<th rowspan="2">Alan Turing</th><!-- extension de la colonne sur 2 lignes -->
+					<th>Un cours X3 pour de niveau 1</th>
+					<th></th>
+					<th></th>
+				</tr>
+				
+				<tr> <!-- ligne 5 -->
+					<th></th>
+					<th colspan="2">Un cours X4 pour de niveau 2 et 3</th><!-- extension de la ligne sur 2 colonnes -->
+				</tr>
+			</tbody>
+			
+			<tfoot> <!-- optionnel -->
+				<tr> <!-- ligne 6 -->
+					<th></th>
+					<th>Niveau 1</th>
+					<th>Niveau 2</th>
+					<th>Niveau 3</th>
+				</tr>
+			</tfoot>
+		</table>
+
+
+		<hr>
+
+		<h2 id="exercice9">Exercice 9: Les iframes </h2>
+		<p>Les iframes sont utilisés pour mettre une page HTML à l'interieur d'une autre page HTML, et intégrer du contenu extérieur, comme l'exemple ci-dessous </p>
+		<p>Notez comment on a spécifié le chemin relatif vers le fichier index.html</p>
+		<iframe src="../BiblioJunia/index.html" height="200" width="600"  title="Bibliothèque JUNIA"></iframe>
+		<p>Remarque : la page index.html n'existe pas pour l'instant mais vous allez la créer dans la deuxième partie de ce TP. 
+		Revenez ici plus tard pour voir le rendu.</p>
+		
+		<p>Ou l'exemple suivant avec un chemin absolu</p>
+		<iframe src="https://www.junia.com/" height="400" width="600"  title="Ecole JUNIA"></iframe>
+		
+		<p>Documentation W3school <a href="https://www.w3schools.com/html/html_iframe.asp"> Les iframes </a> </p> 
+		
+		<p>Ou encore l'exemple ci-dessous, où on intégre une video de youtube</p>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/PB9TuhAt5ks"></iframe>
+		
+		<p>Documentation W3school <a href="https://www.w3schools.com/html/html_youtube.asp"> HTML youtube </a> </p> 
+		
+		<p>Question: A l'aide du code d'iframe fourni par youtube (sous la vidéo &rarr; partager &rarr; intégrer), 
+		intégrez une vidéo de youtube de votre choix (une chanson ? &#128131;).</p>
+		
+		<!-- Inserez la vidéo ici -->
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/qFLhGq0060w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+		<!-- Résultats test en ligne -->
+		<h2>Résultats test</h2>
+		<br>
+		<img src="images/resultats_test_html.jpg" alt="Resultat test" style="width: 70%; height: auto;">
+		
+
+		<!-- Créations SVG -->
+		<h2>Créations personnelles en SVG</h2>
+		<br>
+		<svg width="400" height="180">
+			<rect x="50" y="20" rx="20" ry="20" width="300" height="150"
+			style="fill:red;stroke:black;stroke-width:5;opacity:1" />
+			<text fill="#ffffff" font-size="45" font-family="Verdana" x="77" y="110">ROY JULES</text>
+			Sorry, your browser does not support inline SVG.
+		</svg>
+		<br>
+		<svg height="210" width="500">
+			<polygon points="160,0 250,210 160,210" style="fill:black;stroke:black;stroke-width:1" />
+			<polygon points="160,0 250,210 250,0" style="fill:red;stroke:red;stroke-width:1"/>
+			Sorry, your browser does not support inline SVG.
+		</svg>
+	</body>
+</html>

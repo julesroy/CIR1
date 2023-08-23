@@ -1,0 +1,87 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+% \title{DUMAS-ROY-TP1}
+% \author{ }
+% \date{September 2022}
+
+\begin{document}
+
+% \maketitle
+
+% \section{Introduction}
+\section{Ensembles}
+\subsection{Opérations}
+\textbf{Définition 1.1.} Soient \textit{E} un ensemble et \textit{A}, \textit{B} deux sous-ensembles de \textit{E}.
+
+\begin{itemize}
+
+\item 
+
+L'\textbf{\textit{union}} des deux ensembles \textit{A} et \textit{B}, notée \textit{A} $\cup$ \textit{B} est l’ensemble constitué par les éléments de \textit{E} appartenant à \textit{A} ou à \textit{B}, c’est-à-dire :
+
+\newline
+\newline
+
+$$ \textit{A} \cup \textit{B} := \{ x \in \textit{E} \mid x \in \textit{A} \ ou \ x \in \textit{B}\} $$
+
+\item 
+L’\textbf{\textit{intersection}} des deux ensembles \textit{A} et \textit{B}, notée \textit{A} $\cap$ \textit{B}, est l’ensemble constitué par les éléments de \textit{E} appartenant à \textit{A} et \textit{B}.
+Autrement dit
+
+\newline
+\newline
+
+$$ \textit{A} \cap \textit{B} := \{ x \in \textit{E} \mid x \in \textit{A} \ et \ x \in \textit{B} \} $$
+
+\newline
+\newline
+
+Si \textit{A} $\cap$ \textit{B} = $\emptyset$ alors les deux ensembles \textit{A} et \textit{B} sont dits \textbf{disjoints}.
+
+\item La \textbf{\textit{différence}} des ensembles \textit{A} et \textit{B}, notée \textit{A}$\setminus$\textit{B} est l’ensemble constitué par les éléments de \textit{A} qui n’appartiennent pas à \textit{B}, c’est-à-dire :
+
+\newline
+
+$$ \textit{A} \setminus \textit{B} := \{ x \in \textit{E} \mid x \in \textit{A} \ et \ x \notin \textit{B} \} $$
+
+\end{itemize}
+
+\section{Relations, Fonctions, Applications}
+\subsection{Injections, surjections, bijections}
+\textbf{Défintion 2.1.} Soit \textit{f} : \textit{E} $\Rightarrow$ \textit{F}  une application.
+\begin{itemize}
+    \item On dit que \textit{f} est une application \textbf{\textit{injective}} ou une \textbf{\textit{injection}} si elle vérifie l’une des conditions
+équivalentes suivantes :
+\begin{itemize}
+    \item si tout élément \textit{f} de \textit{F} possède au plus un antécédent \textit{x} par \textit{f} (c’est-à-dire un ou aucun) ;
+    \item $\forall$ $(x_{1}, x_{2})$  $\in$ \textit{E} × \textit{E} $=$
+    \textit{E^2}, si $ f(x_{1})$ = $ f(x_{2}) $ $\Rightarrow$  $x_{1} = x_{2}$ ;
+    \item $\forall$ $(x_{1}, x_{2})$  $\in$ \textit{E} × \textit{E} = \textit{E^2}, si $ x1 $ $\neq$ $x2 $ $\Rightarrow$  $ f(x_{1})$ $\neq$ $ f(x_{2})$ ;
+    \item deux éléments différents ont toujours des images différentes
+\end{itemize}
+\item On dit que \textit{f} est une application \textbf{\textit{surjective}} ou une \textbf{\textit{surjection}} si elle vérifie l’une des conditions équivalentes suivantes :
+\begin{itemize}
+    \item si tout élément \textit{y} de textit{F} possède au moins un antécédent \textit{x} par \textit{f} (c'est-à-dire un ou plusieurs);
+    \item $\forall$ \textit{y} $\in$ \textit{F}, $\exists$ \textit{x} $\in$ \textit{E} $ f(x)$ =\textit{y} ;
+\end{itemize}
+\item On dit que \textit{f} est une application \textbf{\textit{bijective}} ou une \textbf{\textit{bijection}} si elle vérifie l’une des conditions équivalentes suivantes :
+\begin{itemize}
+    \item si \textit{f} est a la fois injective et surjective;
+    \item si tout les élément \textit{y} de \textit{F} possède un et un seul antécédent \textit{x} par \textit{f};
+    \item $\forall$ \textit{y} $\in$ \textit{F}, $\exists$! \textit{x} $\in$ \textit{E} $ f(x)$ =\textit{y} ;
+\end{itemize}
+\end{itemize}
+
+\subsection{Image et image réciproque}
+\textbf{Définition 2.2.} Soit $f$ : \textit{E} $\to$ \textit{F} une application.
+
+\begin{itemize}
+
+\item Soit \textit{A} $\subset$ \textit{E}. On appelle \textbf{\textit{image}} de \textit{A} par $f$ le sous-ensemble $f(\textit{A})$ = $\{$ $f(\textit{a})$, \textit{a} $\in$ \textit{A} $\}$ de \textit{F}. $f(\textit{A})$ est donc l’ensemble des images par $f$ des éléments de \textit{A}. On peut écrire : $y$ $\in$ $f(A)$ $\leftrightarrow$ $\exists x$ $\in$ \textit{A}, $f(x)$ = $y$.
+
+\item Soit \textit{B} une partie de \textit{F}.  L’\textbf{\textit{image réciproque}} de \textit{B} par $f$, notée $f−1(\textit{B})$ est l’ensemble des éléments de \textit{E} dont l’image est dans \textit{B}. Autrement dit $f^{-1}(\textit{B})$ = $\{$ $x$ $\in$ \textit{E}, $f(x)$ $\in$ \textit{B} $\}$.
+
+\end{itemize}
+
+\end{document}

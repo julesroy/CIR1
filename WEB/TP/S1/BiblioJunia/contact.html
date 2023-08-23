@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact JUNIA</title>
+    <meta name="description" content="Junia Bibliothèque Contact">
+    <meta name="keywords" content="Junia, école, bibliothèque, formulaire, contact">
+    <meta name="author" content="ROY Jules">
+    <link rel="stylesheet" href="css/biblio.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo JUNIA" id="logo">
+        <a href="#" id="login">Se connecter</a>
+    </header>
+
+    <main>
+        <form method="post" action="#" class="formLetter">
+            <fieldset>  <!-- la balise fieldset peut être utilisé pour regrouper un ensemble de champs -->
+                <legend>Informations sur vous</legend>
+                
+                <label>Genre:</label>
+                <input type="radio" name="genre" id="mme">  <!-- "name" doit avoir la même valeur pour UN ENSEMBLE d'input de type radio -->
+                <label for="mme">Madame</label>
+                <input type="radio" name="genre" id="mr" > <!-- la valeur de l'attribut "for" de la balise label et le "id" de la balise de l'input associé doit être la même -->
+                <label for="mr">Monsieur</label>
+                
+                <br><br> <!-- La balise br sert à effectuer un retour à la ligne-->
+                
+                <label for="nom">Nom :</label >
+                <input type="text" name="nom" id="nom" placeholder="Votre nom"/>
+                <br><br>
+                
+                <label for="prenom">Prénom :</label >
+                <input type="text" name="prenom" id="prenom" value="Toto"/>
+                <br><br>
+                
+                <label for="courriel">Courriel : </label >
+                <input type="email" name="courriel" id="courriel"/>
+            </fieldset>
+            
+            
+            <fieldset>
+                <legend>Votre demande</legend>
+                
+                <label for="objet">Objet du message :</label>
+                <select id="objet" name="objet">
+                    <option value="0">- Séléctionner -</option>
+                    <option value="sugg">Suggestions</option>
+                    <option value="recl">Reclamations</option>
+                    <option value="insc">Insciption</option>
+                    <option value="prob">Problèmes techniques</option>
+                </select>
+                <br><br>
+          
+                <label for="description">Message :</label > <br>
+                <textarea rows="10" cols="50" name="description" id="description" maxlength="200"></textarea >
+                <br><br>
+                
+                <label for="document">Document:</label>
+                <input type="file" id="document" name="document">
+                <br><br>
+                
+                <input type="submit" name="Envoyer" id="soumission" value="Envoyer"/>
+                <input type="reset">
+            </fieldset>
+        
+        </form>
+    </main>
+
+    <footer>
+        <dl>
+            <dt>Téléphone</dt>
+                <dd>(+33) (0)3 20 30 40 50</dd>
+            <dt>Adresse</dt>
+                <dd>
+                    ISEN Lille - Institut Supérieur <br>
+                    de l'Electronique et du Numérique <br>
+                    41 Boulevard Vauban <br>
+                    59800 Lille Cedex
+                </dd>
+        </dl>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10122.473941582957!2d3.0400270977630695!3d50.634203773622225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d578da129f7d%3A0xd134d73fb7f4c699!2sJunia%20ISEN%20Lille!5e0!3m2!1sfr!2sfr!4v1662571038333!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <ul>
+            <li><a href="lettre.html" class="formLink">Inscrivez-vous à la newsletter</a></li>
+            <li><a href="contact.html" class="formLink">Contactez-nous</a></li>
+        </ul>
+        <ul id="socialicon">
+            <li><a href="https://facebook.com/biblioJunia/" target="_blank"><img src="images/facebook.png" alt="Facebook Junia Bibliothèque"></a></li>
+            <li><a href="https://twitter.com/biblioJunia/" target="_blank"><img src="images/twitter.png" alt="Twitter Junia Bibliothèque"></a></li>
+            <li><a href="https://instagram.com/biblioJunia/" target="_blank"><img src="images/instagram.png" alt="Instagram Junia Bibliothèque"></a></li>
+        </ul>
+    </footer>
+</body>
+</html>

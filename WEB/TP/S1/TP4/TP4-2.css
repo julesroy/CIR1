@@ -1,0 +1,160 @@
+header {
+    background-color: green;
+    }
+    nav{
+    background-color: aqua;
+    }
+    main {
+    background-color: yellow;
+    }
+    .aside1{
+        background-color:darkorchid
+    }
+    .aside2{
+        background-color:rgb(195, 140, 222)
+    }
+    footer {
+    background-color: pink;
+    }
+    .conteneur {
+    background-color: red;
+    }
+    
+    *{
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        margin: 0;
+    }
+    /* ------------------ */
+    
+    nav ul{
+        padding: 0;
+        list-style-type: none;
+        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    
+    nav ul li{
+        height: 40px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 100%;
+    }
+    
+    nav ul li a {
+        border: 2px solid black;
+        display: block;
+        height: inherit;
+        padding: 0.5rem;
+        text-decoration: none;
+    }
+    
+    nav a.active {
+        /*La classe active est ajouté afin de distinguer le lien de la page courante des autres liens */
+        background-color:cadetblue;
+    }
+    
+    /*RWD*/
+    .conteneur{
+        height: 100vh;/*Afin d'étirer la balise sur l'ensemble du viewport: vh (Viewport Height)*/
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: 100px min-content repeat(3,auto) 100px;
+        -ms-grid-columns: 1fr 4fr 1fr;
+        -ms-grid-rows: 100px min-content repeat(3,auto) 100px;
+        grid-template-areas: "Entete  Entete  Entete"
+                             "Menu    Menu    Menu"
+                             "Contenu Contenu Contenu"
+                             "Aside1  Aside1  Aside1"
+                             "Aside2  Aside2  Aside2"
+                             "Pied    Pied    Pied";
+    }
+    
+    header{
+        grid-row: 1;
+        -ms-grid-row: 1;
+        grid-column: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+        grid-area: Entete;
+    }
+    nav{
+        grid-row: 2;
+        -ms-grid-row: 2;
+        grid-column: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+        grid-area: Menu;
+    }
+    main{
+        grid-row: 3;
+        -ms-grid-row: 3;
+        grid-column: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+        grid-area: Contenu;
+    }
+    footer{
+        grid-row: 6;
+        -ms-grid-row: 6;
+        grid-column: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+        grid-area: Pied;
+    }
+    .aside1{
+        grid-row: 4;
+        -ms-grid-row: 4;
+        grid-column: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+        grid-area: Aside1;
+    }
+    .aside2{
+        grid-row: 5;
+        -ms-grid-row: 5;
+        grid-column: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+        grid-area: Aside2;
+    }
+    
+    @media only screen and (600px<=width) {
+        /* POUR TABLETTE : 
+        Le style dans ce media-query va être appliqué 
+        EN PLUS du style CSS ci-dessus (pour téléphone).
+        */
+        .conteneur {
+                grid-template-areas: "Entete  Entete  Entete"
+                                 "Aside1  Menu    Menu"
+                                 "Aside1  Contenu Contenu"
+                                 "Aside1  Contenu Contenu"
+                                 "Aside1  Aside2  Aside2"
+                                 "Pied    Pied    Pied";
+            }
+    
+        nav ul li{
+            width: 25%;
+        }
+    }
+    
+    @media only screen and (768px<=width){ 
+        /* POUR ORDINATEUR
+        Le style dans ce media-query va être appliqué 
+        EN PLUS du style CSS pour téléphone et celui pour tablette
+        puisque une largeur supérieure à 768px est aussi supérieure à 600px.
+        */
+        .conteneur {
+                grid-template-areas: "Entete  Entete  Entete"
+                                     "Aside1  Menu    Aside2"
+                                     "Aside1  Contenu Aside2"
+                                     "Aside1  Contenu Aside2"
+                                     "Aside1  Contenu Aside2"
+                                     "Pied    Pied    Pied";
+        }
+    }

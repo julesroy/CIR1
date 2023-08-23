@@ -1,0 +1,135 @@
+*{
+	box-sizing:border-box;
+}
+#titre{
+	color:#006560;
+	text-align:center;
+}
+#Exercice1,#Exercice2,#Exercice3,#Exercice4,#Exercice5,#Exercice6{
+	border-style:solid;
+	margin: auto;
+	width:600px;
+}
+
+.elt{
+	border: 1px solid rgb(151, 148, 148);
+	font-weight: bold;
+}
+.eltA {
+	background-color: green;
+}
+.eltB {
+	background-color: yellow;
+}
+.eltC {
+	background-color: pink;
+}
+.eltD {
+	background-color: silver ;
+}
+.eltE{
+	background-color:deepskyblue
+}
+
+/* ---------EXERCICE 1  -----------*/
+#Exercice1{
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row-reverse;
+}
+
+#Exercice1 .elt {
+	width: 50px;
+	height: 50px;
+}
+
+/* ---------EXERCICE 2  -----------*/
+#Exercice2{
+	width:800px;
+	display: flex;
+	justify-content: center;
+}
+
+#Exercice2 .elt {
+	width: 50px;
+	height: 50px;
+}
+
+#Exercice2 .eltA {
+	order: 3;
+}
+
+#Exercice2 .eltB {
+	order: 1;
+}
+
+#Exercice2 .eltC {
+	order: 4;
+}
+
+#Exercice2 .eltD {
+	order: 2;
+}
+
+/* --------- EXERCICE 3 -----------*/
+#Exercice3{
+	height:300px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#Exercice3 .elt {
+	width: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#Exercice3 .eltA {
+	height: 50px;
+}
+
+#Exercice3 .eltB {
+	height: 50px;
+	align-self: center;
+}
+
+#Exercice3 .eltC{
+	height: 50px;
+	align-self: flex-end;
+}
+
+/* --------- EXERCICE 4  -----------*/
+#Exercice4{
+	display: grid;
+	grid-template-columns: 100px repeat(2,1fr);
+	grid-template-rows: repeat(3,100px);
+	column-gap: 10px;
+	row-gap: 5px;
+}
+
+#Exercice4 .eltA {
+	grid-column: 1/2;
+	grid-row: 1/3;
+}
+
+#Exercice4 .eltB {
+	grid-column: 1/4;
+	grid-row: 3/4;
+}
+
+#Exercice4 .eltC {
+	grid-column: 2/4;
+	grid-row: 1/2;
+}
+
+#Exercice4 .eltD {
+	grid-column: 3/4;
+	grid-row: 2/3;
+}
+
+#Exercice4 .eltE {
+	grid-column: 2/3;
+	grid-row: 2/3;
+}

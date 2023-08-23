@@ -1,0 +1,43 @@
+	<img src="images/covers/livre1.jpg" alt="Couverture du livre" />
+	<h1>HTML5 et CSS3 : Maîtrisez les standards de la création de sites web</h1>
+	<p>Auteur: Christophe AUBRY </p>
+	<p>Edition: ENI</p> 
+	<p>Date de parution: Novembre 2020</p>
+	<p>Table des matières: </p>
+	
+	L'évolution des spécifications
+	Une brève histoire du Web
+	Les travaux d’élaboration des spécifications
+	L'évolution du HTML
+	L'évolution des CSS
+	Les navigateurs 
+	L'évolution des navigateurs
+	Les outils de développement
+	La compatibilité des navigateurs
+	Les bonnes pratiques 
+	Séparer le contenu de la mise en forme
+	Utiliser une structure sémantique
+	Optimiser le code et organiser vos fichiers
+	Un exemple d’une page bien formée
+	Valider le code de vos pages
+	Les éléments HTML 
+	Bien utiliser le HTML
+	Les balises et les contenus
+	Les attributs des éléments
+	Le bon usage de la syntaxe
+	L'imbrication des éléments
+	Les commentaires
+	La structure des pages 
+	La structure générale des pages web
+	La déclaration doctype
+	L'élément html
+	L'élément head
+	Les éléments enfant de l'en-tête
+	Les éléments meta
+	L'élément title
+	L'élément link
+	L'élément style
+	L'élément script
+	L'élément body
+	Les propriétés d'affichage
+	Exemple d'une structure simple

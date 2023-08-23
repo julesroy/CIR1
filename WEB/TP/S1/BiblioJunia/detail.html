@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Détail du livre</title>
+    <meta name="description" content="Détail du livre">
+    <meta name="keywords" content="livre, HTMLS, CSS3, Cristohphe AUBRY">
+    <meta name="author" content="ROY Jules">
+    <link rel="stylesheet" href="css/biblio.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo JUNIA" id="logo">
+        <a href="#" id="login">Se connecter</a>
+    </header>
+
+    <nav>
+        <p><strong>Navigation:</strong></p>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="#">Activités</a></li>
+            <li><a href="#">Recherche</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <img src="images/covers/livre1.jpg" alt="Couverture du livre" />
+        <h1 class="h1detail">HTML5 et CSS3 : Maîtrisez les standards de la création de sites web</h1>
+        <p>Auteur: Christophe AUBRY </p>
+        <p>Edition: ENI</p> 
+        <p>Date de parution: Novembre 2020</p>
+        <p>Table des matières: </p>
+        
+        <ol type="A"> <!-- On démarre la liste des 5 grandes parties -->
+            <li>L'évolution des spécifications</li>
+                <ol type="1">
+                    <li>Une brève histoire du Web</li>
+                    <li>Les travaux d’élaboration des spécifications</li>
+                    <li>L'évolution du HTML</li>
+                    <li>L'évolution des CSS</li>
+                </ol>
+            <li>Les navigateurs</li>
+                <ol type="I">
+                    <li>L'évolution des navigateurs</li>
+                    <li>Les outils de développement</li>
+                    <li>La compatibilité des navigateurs</li>
+                </ol>
+            <li>Les bonnes pratiques</li>
+            <ol type="a">
+                <li>Séparer le contenu de la mise en forme</li>
+                <li>Utiliser une structure sémantique</li>
+                <li>Optimiser le code et organiser vos fichiers</li>
+                <li>Un exemple d’une page bien formée</li>
+                <li>Valider le code de vos pages</li>
+            </ol>
+            <li>Les éléments HTML</li>
+            <ol type="i">
+                <li>Bien utiliser le HTML</li>
+                <li>Les balises et les contenus</li>
+                <li>Les attributs des éléments</li>
+                <li>Le bon usage de la syntaxe</li>
+                <li>L'imbrication des éléments</li>
+                <li>Les commentaires</li>
+            </ol>
+            <li>La structure des pages</li>
+            <ol type="1">
+                <li>La structure générale des pages web</li>
+                <li>La déclaration doctype</li>
+                <li>L'élément html</li>
+                <li>L'élément head</li>
+                    <ul>
+                        <li>Les éléments enfant de l'en-tête</li>
+                        <li>Les éléments meta</li>
+                        <li>L'élément title</li>
+                        <li>L'élément link</li>
+                        <li>L'élément style</li>
+                        <li>L'élément script</li>
+                    </ul>
+                <li>L'élément body</li>
+                <li>Les propriétés d'affichage</li>
+                <li>Exemple d'une structure simple</li>
+            </ol>
+        </ol> <!-- Fin de la liste des 5 grandes parties -->
+    </main>
+
+    <footer>
+        <dl>
+            <dt>Téléphone</dt>
+                <dd>(+33) (0)3 20 30 40 50</dd>
+            <dt>Adresse</dt>
+                <dd>
+                    ISEN Lille - Institut Supérieur <br>
+                    de l'Electronique et du Numérique <br>
+                    41 Boulevard Vauban <br>
+                    59800 Lille Cedex
+                </dd>
+        </dl>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10122.473941582957!2d3.0400270977630695!3d50.634203773622225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d578da129f7d%3A0xd134d73fb7f4c699!2sJunia%20ISEN%20Lille!5e0!3m2!1sfr!2sfr!4v1662571038333!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <ul>
+            <li><a href="lettre.html" class="formLink">Inscrivez-vous à la newsletter</a></li>
+            <li><a href="contact.html" class="formLink">Contactez-nous</a></li>
+        </ul>
+        <ul id="socialicon">
+            <li><a href="https://facebook.com/biblioJunia/" target="_blank"><img src="images/facebook.png" alt="Facebook Junia Bibliothèque"></a></li>
+            <li><a href="https://twitter.com/biblioJunia/" target="_blank"><img src="images/twitter.png" alt="Twitter Junia Bibliothèque"></a></li>
+            <li><a href="https://instagram.com/biblioJunia/" target="_blank"><img src="images/instagram.png" alt="Instagram Junia Bibliothèque"></a></li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!Doctype html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="TP2.css">
+	<title> TP2 : CSS </title>
+</head>
+<body>
+	<h1>TP2 <br> Les bases du CSS</h1>
+	<h2>Habillage du texte, du fond, de la bordure et des liens hypertextes</h2>
+	<h3>Sélecteurs de balises, de classes, pseudo-classes et pseudo-éléments</h3>
+	<p class="para1">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. 
+	Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, 
+	quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. 
+	Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, 
+	sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles 
+	Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications 
+	de mise en page de texte, comme Aldus PageMaker.<br>
+	<a href="https://www.junia.com/" class="lien1"> Site  de JUNIA </a>
+	</p>
+	
+	<p class="para2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+	Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+	Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+	Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	<a href="https://www.univ-catholille.fr/" class="lien2"> Site de la Catho </a>
+	</p>
+	
+	<p class="para3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+	Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+	Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+	Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	
+	
+	<h3>Sélecteurs d'attribut</h3>
+	
+	<p class="test">Un paragraphe de la classe test </p>
+	
+	<div class="test">
+		<p>Un paragraphe dans un div de la classe test </p>
+	</div>
+	
+	<div class="test_deux">
+		<p>Un paragraphe dans un div de la classe test deux</p>
+	</div>
+	
+	
+	<h3>Sélecteurs complexes</h3>
+	<article>
+		<div id="un" class="block">
+			<h4>Ligne 3: Lorem Ipsum</h4>
+			<p>Ligne 4: Ut enim ad minim veniam, quis nostrud exercitation.</p>
+			<h4>Ligne 5: Lorem Ipsum</h4>
+			<h5>Ligne 6: dolor sit amet consectetur</h5>
+			<p>Ligne 7: Ut enim ad minim veniam, quis nostrud exercitation.</p>
+			<p>Ligne 8: Ut enim ad minim veniam, quis nostrud exercitation.</p>
+		</div>
+		<div id="deux" class="block">
+			<h4>Ligne 11: Lorem ipsum dolor sit amet</h4>
+			<h5>Ligne 12: Ut enim ad minim veniam</h5>
+			<p>Ligne 13: Ut enim ad minim veniam, quis nostrud exercitation.</p>
+			<p>Ligne 14: Duis aute irure dolor in reprehenderit in voluptate.</p>
+			<div>
+				<h5>Ligne 16: Sed quis sagittis ex</h5>
+				<p>Ligne 17: In dui lacus, pulvinar id porttitor a, suscipit nec eros. Vivamus in tellus auctor.</p>
+			</div>
+			<h5>Ligne 19: Sed quis sagittis ex</h5>
+			<p>Ligne 20: Donec cursus lectus vulputate consectetur luctus. Phasellus porttitor posuere.</p>
+			<h4>Ligne 21: Lorem ipsum dolor sit amet</h4>
+			<p>Ligne 22: Donec cursus lectus vulputate consectetur luctus. Phasellus porttitor posuere.</p>
+		</div>
+	</article>
+	
+	<div id="fable">
+		La cigale et la fourmi
+		
+		La cigale , ayant chanté
+		Tout l'été,
+		Se trouva fort dépourvue
+		Quand la bise fut venue
+		Pas un seul petit morceau
+		De mouche ou de vermisseau
+		Elle alla crier famine
+		Chez la fourmi sa voisine,
+		La priant de lui prêter
+		Quelque grain pour subsister
+		Jusqu'à la saison nouvelle
+		"Je vous paierai, lui dit-elle,
+		Avant l'août , foi d'animal,
+		Intérêt et principal ."
+		La fourmi n'est pas prêteuse ;
+		C'est là son moindre défaut.
+		"Que faisiez-vous au temps chaud ?
+		Dit-elle à cette emprunteuse.
+		Nuit et jour à tout venant
+		Je chantais, ne vous déplaise.
+		- Vous chantiez ? j'en suis fort aise.
+		Eh bien : dansez maintenant."
+		
+		FIN
+	</div>
+	
+	<h2>Habillage d'un tableau</h2>
+	<table>
+		<caption>Présentation de quelques cours</caption>
+
+		<tr>
+			 <th></th>
+			 <th>Niveau 1</th>
+			 <th>Niveau 2</th>
+			 <th>Niveau 3</th>
+		</tr>
+
+		<tr>
+			 <th rowspan="2">Daniel Martin</th>
+			 <td colspan="2">Un cours X1 pour étudiant de niveau 1 et 2</td>
+			 <td></td>
+		</tr>
+
+		<tr>
+			 <td colspan="3">Un cours X2 destiné à des étudiants de tout niveau</td>
+		</tr>
+
+		<tr>
+			 <th rowspan="2">Alan Turing</th>
+			 <td>Un cours X3 de niveau 1 </td>
+			 <td></td>
+			 <td></td>
+		</tr>
+		<tr>
+			 <td></td>
+			 <td colspan="2">Un cours X4 de niveau 2 et 3</td>
+		</tr>
+
+		<tr>
+			 <th></th>
+			 <th>Niveau 1</th>
+			 <th>Niveau 2</th>
+			 <th>Niveau 3</th>
+		</tr>
+	</table>
+	<br>
+	<p style="color:red"><strong>Résultat test CSS</strong></p>
+	<img src="img/test_css.jpg" alt="Test CSS Jules ROY" style="width: 50%; height: auto">
+</body>
+</html>

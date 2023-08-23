@@ -1,0 +1,126 @@
+h1{
+    font-weight: bold;
+    text-align: center;
+    background-color: yellow;
+    background-image: url("img/html5.png"), url("img/css3.png");
+    background-size: contain, contain;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left, right;
+}
+
+h2{
+    font-family: 'Trebuchet MS';
+    font-style: italic;
+    border: 3px dotted red;
+    margin: 20px;
+    padding: 10px;
+}
+
+h3{
+    color: blue;
+}
+
+.para1{
+    font-family: serif;
+    font-size: 18pt;
+    line-height: 30pt;
+}
+
+.para2::first-letter{
+    font-weight: bold;
+    color: blue;
+    font-size: 15pt;
+}
+
+.para2::first-line{
+    font-style: italic;
+}
+
+.para3::after{
+    content: "Quelque chose d'ajouté à tous les paragraphes de la classe para3";
+    color: red;
+}
+
+div[class*="test"]{
+    background: silver;
+}
+
+#un > h5, #deux > h5{
+    background-color: yellow;
+}
+
+#deux > div > h5{
+    color: green;
+}
+
+#un > h5, #deux > h4:first-child + h5{
+    color: red;
+}
+
+#deux > p{
+    color: orange;
+}
+
+#deux > h4:first-child{
+    color: blue;
+}
+
+/*3.Habillage des liens hypertexteset les pseudo-classes*/
+
+.lien1:link{
+    text-decoration: none;
+    color: blue;
+}
+
+.lien1:visited{
+    color: orange;
+}
+
+.lien1:hover{
+    font-size: 25pt;
+    color: green;
+    text-transform: uppercase;
+}
+
+.lien2:link{
+    color: inherit;
+    text-decoration: none;
+}
+
+.lien2:hover{
+    font-weight: bold;
+    color: blue;
+    background-color: yellow;
+}
+
+.lien2:active{
+    font-weight: bold;
+    color: red;
+    text-decoration: none;
+    background-color: silver;
+}
+
+/*4.Habillage des tableaux*/
+
+caption{
+    font-family: "Broadway";
+    font-weight: bold;
+    margin: 10px;
+}
+
+table{
+    font-family: sans-serif;
+    border: solid #6495ed 3px;
+    border-collapse: collapse;
+    margin: auto;
+    width: 50%;
+}
+
+tr, th, td{
+    border: solid #6495ed 1px;
+    width: 25%;
+}
+
+th{
+    background-color: #EFF6FF;
+}

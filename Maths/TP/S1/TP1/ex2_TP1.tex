@@ -1,0 +1,86 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\begin{document}\textit{
+Soient E,F,G trois ensembles et f : E $\Rightarrow$ F et g : F $\Rightarrow$ G deux applications. On a les propriétés suivantes :
+}
+\textit{
+\begin{enumerate}
+    \item si g $o$ f est injective alors f est injective ;
+    \newline
+    \newline
+    f : E $\Rightarrow$ F 
+    g : F $\Rightarrow$ G
+    g $o$ f: E $\Rightarrow$ G
+    $x$ $\in$ E, $y$ $\in$ F, $z$ $\in$ G
+    \newline
+    g $o$ f est injective $\Rightarrow$ f est injective
+    \newline 
+    (g $o$ f)(x)= g(f(x)) 
+    \newline
+    $\forall$ $(x_{1}, x_{2})$  $\in$ \textit{E} × \textit{E} $=$
+    \textit{E^2}, si $ f(x_{1})$ = $ f(x_{2}) $ $\Rightarrow$  $x_{1} = x_{2}$ ;
+    $\forall$ $(x_{1}, x_{2})$  $\in$ \textit{E} × \textit{E} $=$
+    \textit{E^2}, si $ g(f(x_{1}))$ = $ g(f(x_{2})) $ $\Rightarrow$  $x_{1} = x_{2}$ ;
+    \item si g $o$ f est injective alors f est injective ; 
+    \newline
+    \newline
+    f : E $\Rightarrow$ F 
+    g : F $\Rightarrow$ G
+    g $o$ f: E $\Rightarrow$ G
+    $x$ $\in$ E, $y$ $\in$ F, $z$ $\in$ G
+    \newline
+    g $o$ f est surjective $\Rightarrow$ f est surjective 
+    \newline 
+    (g $o$ f)(x)= g(f(x)) 
+    \newline
+    $\forall$ \textit{z} $\in$ \textit{G}, $\exists$ \textit{y} $\in$ \textit{F} $ g(y)$ =\textit{z} ;
+    \newline
+    $\forall$\textit{z} $\in$ \textit{G}, $\exists$ \textit{x} $\in$ \textit{E} $ g(f(x))$ =\textit{Z} ;
+    \newline
+    on pose y=f(x) $\in$ \textit{F}
+    \newline
+    g(f(x))=g(y)=z
+    \item si f et g sont injectives alors g $o$ f est injective ;
+    \newline
+    \newline
+    $(x, y)$ $\in$ $E^2$, ($g$ $o$ $f$)($x$) = ($g$ $o$ $f$)($y$)
+    Si ($g$ $o$ $f$)($x$) = ($g$ $o$ $f$)($y$) $\leftrightarrow$ $g(f(x))$ = $g(f(y))$
+    $g$ $\rightarrow$ injective,  $\leftrightarrow$ $f(x)$ = $g(y)$
+    $f$ $\rightarrow$ injective, $\leftrightarrow$ $x$ = $y$
+    $g$ $o$ $f$ $\rightarrow$ injective.
+    \item si f et g sont surjectives alors g $o$ f est surjective ;
+    \newline
+    \newline
+    $\forall$ $y$ $\in$ $B$, $\exists$ $x$ $\in$ $A$ , $y$ = $f(x)$
+    $\forall$ $z$ $\in$ $C$, $\exists$ $y$ $\in$ $B$,$y$ = $f(x)$
+    $\exists$ $x$ \ tel \ que \ $y$ = $f(x)$
+    $\forall$ $z$ $\in$ $C$, $\exists$ $y$ $\in$ $B$, $\exists$ $x$ $\in$ $A$\ et\ $y$ = $f(x)$,$z$ = $g(y)$
+    $\forall$ $z$ $\in$ $C$, $\exists$ $y$ $\in$ $B$, $\exists$ $x$ $\in$ $A$\ et\ $y$ = $f(x)$,$z$ = $g(f(x))$
+    $\forall$ $z$ $\in$ $C$, $\exists$ $x$ $\in$ $A$,$z$ = $g(f(x))$
+    \item si f et g sont bijectives alors g $o$ f est bijective et (g $o$ f )$^{-1}$ = f$^{-1}$ $ o $ g$^{-1}$.
+    \newline
+    \newline
+    ($g$ $o$ $f$) $o$ ($f^{-1}$ $o$ $g^{-1}$) = $g$ $o$ ($f$ $o$ $f^{-1}$) $o$ $g^{-1}$
+    $\newline$
+    $\Leftrightarrow$ ($g$ $o$ $id_{f}$) $o$ $g^{-1}$
+    $\newline$
+    $\Leftrightarrow$ $g$ $o$ $g^{-1}$ = $id_{G}$
+    $\newline$
+    $\newline$
+    ($f^{-1}$ $o$ $g^{-1}$) $o$ ($g$ $o$ $f$)
+    $\newline$
+    $f^{-1}$ $o$ ($g^{-1}$ $o$ $g$) $o$ $f$
+    $\newline$
+    ($g^{-1}$ $o$ $g$)($y$) = $g^{-1}(g(y))$ = $y$ = $id_{F}$
+    $\newline$
+    ($f^{-1}$ $o$ $id_{f}$) $o$ $f$ = $f^{-1}$ $o$ $f$ = $id_{E}$
+    $\newline$
+    $\Rightarrow$ ($g$ $o$ $f$) $o$ ($f^{-1}$ $o$ $g^{-1}$) = $id_{G}$
+    $\newline$
+    $\Rightarrow$ ($f^{-1}$ $o$ $g^{-1}$) $o$ ($g$ $o$ $f$) = $id_{E}$
+    $\newline$
+    $\Longrightarrow$ ($f^{-1}$ $o$ $g^{-1}$) = ($f$ $o$ $g$)$^{-1}$
+\end{enumerate}
+}
+\end{document}

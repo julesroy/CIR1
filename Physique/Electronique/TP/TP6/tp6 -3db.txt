@@ -1,0 +1,10 @@
+La bande passante à -3dB d'un filtre est une mesure importante de la capacité d'un filtre à transmettre les signaux sur une plage de fréquences donnée.
+Pour calculer la bande passante à -3dB d'un filtre, vous pouvez suivre les étapes suivantes :
+-Tracez la réponse en fréquence du filtre : vous pouvez le faire en utilisant un analyseur de spectre, un oscilloscope ou tout autre équipement de mesure approprié.
+-Identifiez la fréquence de coupure à -3dB : La fréquence de coupure est la fréquence à laquelle la réponse en fréquence du filtre est réduite de moitié (-3dB). C'est généralement la fréquence à laquelle le filtre commence à atténuer les signaux.
+-Calculez la bande passante à -3dB : Une fois que vous avez identifié la fréquence de coupure à -3dB, vous pouvez calculer la bande passante à -3dB en utilisant la formule suivante :
+Bande passante à -3dB = Fréquence de coupure à -3dB x √(2) - Fréquence de coupure à -3dB x √(2)
+
+Par exemple, si la fréquence de coupure à -3dB est de 10 kHz, la bande passante à -3dB sera :
+-Bande passante à -3dB = 10 kHz x √(2) - 10 kHz x √(2) ≈ 7,07 kHz
+Donc, la bande passante à -3dB du filtre est d'environ 7,07 kHz.

@@ -1,0 +1,167 @@
+:root{
+    --violet-JUNIA: #4A235A;
+    --violet-clair: #F5EEF8;
+}
+
+*{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+body{
+    margin: 0;
+}
+
+header, nav, main, footer{
+    padding: 0.5%;
+}
+
+nav{
+    background-color: var(--violet-JUNIA);
+}
+
+main{
+    color: var(--violet-JUNIA);
+    background-color: var(--violet-clair);
+}
+
+h1{
+    font-size: 15px;
+}
+
+.h1index{
+    font-size: 15px;
+}
+
+.h1detail{
+    font-size: 18px;
+}
+
+footer{
+    color: white;
+    background-color: var(--violet-JUNIA);
+}
+
+#logo{
+    width: 15%;
+}
+
+#socialicon img{
+    width: 30px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.formLink{
+    color: white;
+    text-decoration: none;
+}
+
+.formLink:hover{
+    text-decoration: underline;
+}
+
+#login{
+    text-decoration: none;
+    background-color: white;
+    color: var(--violet-JUNIA);
+    text-align: center;
+    border: solid 2px var(--violet-JUNIA);
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+#login:hover{
+    background-color: var(--violet-JUNIA);
+    color: white;
+}
+
+.detailLink{
+    text-decoration: none;
+    background-color: var(--violet-clair);
+    color: var(--violet-JUNIA);
+    text-align: center;
+    border: solid 1px var(--violet-JUNIA);
+    padding: 5px;
+}
+
+.detailLink:hover{
+    background-color: var(--violet-JUNIA);
+    color: white;
+}
+
+.formLetter > fieldset{
+    border: solid var(--violet-JUNIA);
+    width: 60%;
+    margin: auto;
+    padding: 25px;
+}
+
+.formLetter > fieldset:hover{
+    box-shadow: 2px 2px 5px var(--violet-JUNIA);
+}
+
+.formLetter > fieldset > legend{
+    font-weight: bold;
+    text-shadow: 1px 1px var(--violet-JUNIA);
+}
+
+.formLetter > fieldset > label{
+    font-weight: bold;
+    display: inline-block;
+    width: 25%;
+}
+
+.formLetter > fieldset > input[type="text"], .formLetter > fieldset > input[type="email"], .formLetter > fieldset > select{
+    border: none;
+    border-bottom: solid 1px var(--violet-JUNIA);
+    background-color: var(--violet-clair);
+    color: var(--violet-JUNIA);
+    width: 25%;
+}
+
+.formLetter > fieldset > input[type="text"]:focus, .formLetter > fieldset > input[type="email"]:focus{
+    outline-style: none;
+    border-bottom: solid 1px red;
+    background-color: white;
+}
+
+.formLetter > fieldset > textarea{
+    width: 25%;
+    height: 50px;
+    display: block;
+    margin: auto;
+    background-color: var(--violet-clair);
+}
+
+.formLetter > fieldset > textarea:focus{
+    outline-style: none;
+    border: solid 1px red;
+    background-color: white;
+    width: 50%;
+    height: 100px;
+}
+
+.formLetter > fieldset > input[type="submit"], .formLetter > fieldset > input[type="reset"]{
+    font-weight: bold;
+    color: white;
+    background-color: var(--violet-JUNIA);
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 120px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px var(--violet-JUNIA);
+}
+
+.formLetter > fieldset > input[type="submit"]:hover, .formLetter > fieldset > input[type="reset"]:hover{
+    color: red;
+    background-color: white;
+    border: solid 2px red;
+    box-shadow: 2px 2px 5px red;
+    cursor: pointer;
+}
